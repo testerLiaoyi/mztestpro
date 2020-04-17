@@ -48,21 +48,23 @@ class ElectricCar(Car):
         """初始化父类属性"""
         super().__init__(make,model,year)
 
-
 # my_dog = Dog('willie',6)
 # print("my dog's name is " + my_dog.name.title() + '.')
 # print("my dog's age is " + str(my_dog.age) + ' years old.')
 # my_dog.sit()
 # my_dog.roll_over()
-my_new_car = Car('audi','a4',2020)
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
+# my_new_car = Car('audi','a4',2020)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometer()
 #直接修改属性值
 # my_new_car.odometer_reading = 23
 # my_new_car.read_odometer()
 #通过方法修改属性的值
-my_new_car.updata_odometer(22)
-my_new_car.read_odometer()
+# my_new_car.updata_odometer(22)
+# my_new_car.read_odometer()
 #通过方法对属性的值进行递增
-my_new_car.incremente_odometer(100)
-my_new_car.read_odometer()
+# my_new_car.incremente_odometer(100)
+# my_new_car.read_odometer()
+
+my_tesla = ElectricCar('tesla','model s',2016)
+print()
