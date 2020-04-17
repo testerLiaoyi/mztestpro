@@ -7,12 +7,10 @@ from selenium import webdriver
 #启动浏览器驱动
 def browser():
     driver = webdriver.Chrome()
-    host = '127.0.0.1:4444'  #运行主机ip端口
-    dc = {'borwserName':'Chrome'}  #指定浏览器
-    # driver = Remote(command_executor='http://' + host + '/wd/hub',desired_capabilities=dc)
     return driver
+
 if __name__ == '__main__':
     dr = browser()
-    dr.get('https://www.baidu.com')
-    # time.sleep(3)
-    # dr.quit()
+    dr.get('http://127.0.0.1:8080/tc_web')
+    time.sleep(3)
+    dr.quit()
