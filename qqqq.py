@@ -47,6 +47,20 @@ class ElectricCar(Car):
     def __init__(self,make,model,year):
         """初始化父类属性"""
         super().__init__(make,model,year)
+        self.battery_size = 70
+
+    def describe_battery(self):
+        """打印一条描述电瓶容量的消息"""
+        print("This car has a " + str(self.battery_size) + "-KWh battery")
+
+    def updata_battery(self,battery):
+        self.battery_size = battery
+
+my_tesla = ElectricCar('tesla','model s', 2016)
+print(my_tesla.get_descriptive_name())
+my_tesla.updata_battery(100)
+my_tesla.describe_battery()
+my_tesla.read_odometer()
 
 # my_dog = Dog('willie',6)
 # print("my dog's name is " + my_dog.name.title() + '.')
@@ -65,6 +79,3 @@ class ElectricCar(Car):
 #通过方法对属性的值进行递增
 # my_new_car.incremente_odometer(100)
 # my_new_car.read_odometer()
-
-my_tesla = ElectricCar('tesla','model s',2016)
-print()
