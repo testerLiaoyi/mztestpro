@@ -5,7 +5,7 @@ class Page(object):
     '''
     页面基础类
     '''
-    minto_url = 'http://loaclhost:8080/tc_web'
+    minto_url = 'http://loaclhost:80/tc_web'
 
     def __init__(self, selenium_driver, base_url=minto_url, parent=None):
         self.base_url = base_url

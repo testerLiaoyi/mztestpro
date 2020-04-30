@@ -13,9 +13,12 @@ def insert_img(driver, file_name):
     file_path = base + "/report/image/" + file_name
     driver.get_screenshot_as_file(file_path)
 
+
+
+
 if __name__ == '__main__':
     driver = webdriver.Chrome()
-    driver.get("http://localhost:8080/tc_web")
+    driver.get("http://localhost:80/tc_web")
     driver.maximize_window()
-    insert_img(driver, 'denglu.jpg')
+    insert_img(driver, 'denglu1.jpg')
     driver.quit()
